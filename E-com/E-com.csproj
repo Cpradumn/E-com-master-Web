@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\CategoryCRUD.aspx" />
+    <Content Include="App_Code\ProductCRUD.aspx" />
     <Content Include="footer.ascx" />
     <Content Include="Global.asax" />
     <Content Include="images\camera.jpg" />
@@ -75,17 +77,41 @@
     <Content Include="images\laptop.jpg" />
     <Content Include="images\logo.png" />
     <Content Include="images\printer.jpg" />
+    <Content Include="Login.aspx" />
     <Content Include="Menu.ascx" />
+    <Content Include="PartialUserControl.ascx" />
     <Content Include="ReadQueryString.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="UserControlDemo.aspx" />
     <Content Include="ViewCart.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Home.aspx" />
     <Content Include="viewByCateory.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\CountedButton.cs" />
+    <Compile Include="Admin\DAL\CategoryDAL.cs" />
+    <Compile Include="Admin\Models\Category.cs" />
+    <Compile Include="Admin\Models\Product.cs" />
+    <Compile Include="App_Code\CountedButton.cs" />
+    <Compile Include="App_Code\DbConnectionStr.cs" />
+    <Compile Include="App_Code\ProductCRUD.aspx.cs">
+      <DependentUpon>ProductCRUD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\ProductCRUD.aspx.designer.cs">
+      <DependentUpon>ProductCRUD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\Users.cs" />
+    <Compile Include="App_Code\UsersDAL.cs" />
+    <Compile Include="Admin\CategoryCRUD.aspx.cs">
+      <DependentUpon>CategoryCRUD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CategoryCRUD.aspx.designer.cs">
+      <DependentUpon>CategoryCRUD.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Common.Master.cs">
       <DependentUpon>Common.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -103,12 +129,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Menu.ascx.cs">
       <DependentUpon>Menu.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Menu.ascx.designer.cs">
       <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PartialUserControl.ascx.cs">
+      <DependentUpon>PartialUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PartialUserControl.ascx.designer.cs">
+      <DependentUpon>PartialUserControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReadQueryString.aspx.cs">

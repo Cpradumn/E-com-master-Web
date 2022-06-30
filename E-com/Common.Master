@@ -1,5 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Common.master.cs" Inherits="E_com.Common" %>
 
+<%@ Register src="footer.ascx" tagname="footer" tagprefix="uc1" %>
+<%@ Register src="Menu.ascx" tagname="Menu" tagprefix="uc2" %>
+
 <!DOCTYPE html>
 
 <html>
@@ -7,13 +10,63 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 61px;
+        }
+        .auto-style3 {
+            width: 82%;
+        }
+        .auto-style4 {
+            height: 40px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
+   
         <div>
+            <asp:ImageButton ID="ImageButton1" runat="server" CausesValidation="False" Height="55px" ImageUrl="~/images/logo.png" PostBackUrl="~/Home.aspx" Width="108px" />
+            <br />
+            <br />
+        </div>
+        <table class="auto-style1">
+            <tr>
+                <td colspan="2" class="auto-style4">
+                    <uc2:Menu ID="Menu1" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/viewByCateory.aspx">Furniture</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/viewByCateory.aspx">Electronics</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/viewByCateory.aspx">Camera</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/viewByCateory.aspx">Home Needs</asp:HyperLink>
+                    <br />
+                </td>
+                <td class="auto-style3">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-        </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <br />
+                    <uc1:footer ID="footer1" runat="server" />
+                </td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>

@@ -10,33 +10,24 @@
 namespace E_com {
     
     
-    public partial class ViewCart {
+    public partial class PartialUserControl {
         
         /// <summary>
-        /// ViewCartCheckBoxList control.
+        /// PartialPageDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList ViewCartCheckBoxList;
+        protected global::System.Web.UI.WebControls.DropDownList PartialPageDropDownList;
         
         /// <summary>
-        /// ViewCartLabel control.
+        /// PartialPageCheckBoxList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ViewCartLabel;
-        
-        /// <summary>
-        /// ViewCartDeletebtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ViewCartDeletebtn;
+        protected global::System.Web.UI.WebControls.CheckBoxList PartialPageCheckBoxList;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using E_com.App_Code;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -21,6 +22,24 @@ namespace E_com
 
         protected void registerbtn_Click(object sender, EventArgs e)
         {
+            Users users = new Users();
+            users.FirstName = txtfirstname.Text;
+            users.LastName = txtlastname.Text;
+            users.Email = txtemail.Text;
+            users.Password = txtpassword.Text;
+
+            UsersDAL dal = new UsersDAL();
+            int res = dal.SaveNewUsers(users);
+
+            if (res == 1)
+            {
+                Response.Redirect("/Login.aspx");
+            }
+            else
+            {
+                lblMessage.Text = "Fail";
+            }
+
 
         }
     }

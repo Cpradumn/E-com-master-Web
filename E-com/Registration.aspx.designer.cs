@@ -7,38 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace E_com {
-    
-    
-    public partial class Registration {
-        
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
-        /// Image1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
-        
-        /// <summary>
-        /// Menu1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::E_com.Menu Menu1;
-        
+namespace E_com
+{
+
+
+    public partial class Registration
+    {
+
         /// <summary>
         /// lbl1 control.
         /// </summary>
@@ -47,7 +22,7 @@ namespace E_com {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl1;
-        
+
         /// <summary>
         /// txtfirstname control.
         /// </summary>
@@ -56,7 +31,7 @@ namespace E_com {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtfirstname;
-        
+
         /// <summary>
         /// RequiredFieldValidator1 control.
         /// </summary>
@@ -65,7 +40,7 @@ namespace E_com {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
-        
+
         /// <summary>
         /// lbl2 control.
         /// </summary>
@@ -74,7 +49,7 @@ namespace E_com {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl2;
-        
+
         /// <summary>
         /// txtlastname control.
         /// </summary>
@@ -83,7 +58,7 @@ namespace E_com {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtlastname;
-        
+
         /// <summary>
         /// lastnamevalidator control.
         /// </summary>
@@ -92,7 +67,7 @@ namespace E_com {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator lastnamevalidator;
-        
+
         /// <summary>
         /// txtemail control.
         /// </summary>
@@ -101,7 +76,7 @@ namespace E_com {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtemail;
-        
+
         /// <summary>
         /// emailvalidator control.
         /// </summary>
@@ -110,7 +85,7 @@ namespace E_com {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator emailvalidator;
-        
+
         /// <summary>
         /// lbl3 control.
         /// </summary>
@@ -119,7 +94,7 @@ namespace E_com {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl3;
-        
+
         /// <summary>
         /// txtaddress control.
         /// </summary>
@@ -128,7 +103,7 @@ namespace E_com {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtaddress;
-        
+
         /// <summary>
         /// addressvalidator control.
         /// </summary>
@@ -137,7 +112,7 @@ namespace E_com {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator addressvalidator;
-        
+
         /// <summary>
         /// txtpassword control.
         /// </summary>
@@ -146,7 +121,7 @@ namespace E_com {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtpassword;
-        
+
         /// <summary>
         /// passwordvalidator control.
         /// </summary>
@@ -155,7 +130,7 @@ namespace E_com {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator passwordvalidator;
-        
+
         /// <summary>
         /// txtconirompassword control.
         /// </summary>
@@ -164,7 +139,7 @@ namespace E_com {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtconirompassword;
-        
+
         /// <summary>
         /// conformpasswordCompareValidator control.
         /// </summary>
@@ -173,7 +148,7 @@ namespace E_com {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CompareValidator conformpasswordCompareValidator;
-        
+
         /// <summary>
         /// registerbtn control.
         /// </summary>
@@ -182,14 +157,14 @@ namespace E_com {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button registerbtn;
-        
+
         /// <summary>
-        /// footer1 control.
+        /// lblMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::E_com.footer footer1;
+        protected global::System.Web.UI.WebControls.Label lblMessage;
     }
 }

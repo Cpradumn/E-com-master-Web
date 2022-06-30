@@ -8,5 +8,7 @@
 &nbsp; |&nbsp;
 <asp:HyperLink ID="ViewCartMenuLink" runat="server" NavigateUrl="~/ViewCart.aspx">View Cart</asp:HyperLink>
 &nbsp;| 
+    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink>
+    <br />
 </div>
 

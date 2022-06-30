@@ -1,12 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="E_com.Registration" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Common.Master" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="E_com.Registration" %>
 
-<%@ Register src="Menu.ascx" tagname="Menu" tagprefix="uc1" %>
-<%@ Register src="footer.ascx" tagname="footer" tagprefix="uc2" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
     <title>Registration</title>
     <style type="text/css">
         .auto-style1 {
@@ -15,23 +11,30 @@
         .auto-style2 {
             height: 26px;
         }
+        .auto-style5 {
+            width: 454px;
+        }
+        .auto-style6 {
+            height: 26px;
+            width: 454px;
+        }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
+
+</asp:Content>
+
+ <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     
         <div>
-            <asp:Image ID="Image1" runat="server" Height="134px" ImageUrl="~/images/logo.png" Width="324px" />
         </div>
         <table class="auto-style1">
 
             <tr>
-                <td colspan>
-                    <uc1:Menu ID="Menu1" runat="server" />
+                <td colspan class="auto-style5">
                     <br />
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="auto-style5">
                     <asp:Label ID="lbl1" runat="server" Text="Enter First Name :"></asp:Label>
                     <asp:TextBox ID="txtfirstname" runat="server" Height="16px" OnTextChanged="TextBox1_TextChanged" Width="340px"></asp:TextBox>
                 </td>
@@ -40,7 +43,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">
+                <td class="auto-style6">
                     <asp:Label ID="lbl2" runat="server" Text="Enter Last Name :"></asp:Label>
                     <asp:TextBox ID="txtlastname" runat="server" Height="16px" Width="340px"></asp:TextBox>
                 </td>
@@ -49,7 +52,7 @@
                 </td>
             </tr>
             <tr>
-                <td>Enter Email :
+                <td class="auto-style5">Enter Email :
                     <asp:TextBox ID="txtemail" runat="server" Height="16px" TextMode="Email" Width="340px"></asp:TextBox>
                 </td>
                 <td>
@@ -57,7 +60,7 @@
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="auto-style5">
                     <asp:Label ID="lbl3" runat="server" Text="Enter Address :"></asp:Label>
                     <asp:TextBox ID="txtaddress" runat="server" TextMode="MultiLine"></asp:TextBox>
                 </td>
@@ -66,32 +69,31 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">Enter Password :<asp:TextBox ID="txtpassword" runat="server" TextMode="Password"></asp:TextBox>
+                <td class="auto-style6">Enter Password :<asp:TextBox ID="txtpassword" runat="server" TextMode="Password"></asp:TextBox>
                 </td>
                 <td class="auto-style2">
                     <asp:RequiredFieldValidator ID="passwordvalidator" runat="server" BorderColor="Red" ControlToValidate="txtpassword" ErrorMessage="Password Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td>Confirm Passwoed : <asp:TextBox ID="txtconirompassword" runat="server" TextMode="Password"></asp:TextBox>
+                <td class="auto-style5">Confirm Passwoed : <asp:TextBox ID="txtconirompassword" runat="server" TextMode="Password"></asp:TextBox>
                 </td>
                 <td>
                     <asp:CompareValidator ID="conformpasswordCompareValidator" runat="server" ControlToCompare="txtpassword" ControlToValidate="txtconirompassword" ErrorMessage="Password does not match" ForeColor="Red"></asp:CompareValidator>
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="auto-style5">
                     <asp:Button ID="registerbtn" runat="server" Text="Register" OnClick="registerbtn_Click" />
                     <br />
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td colspan>
-                    <uc2:footer ID="footer1" runat="server" />
+                <td colspan class="auto-style5">
+                    <asp:Label ID="lblMessage" runat="server" Text="Lbl"></asp:Label>
                 </td>
             </tr>
         </table>
-    </form>
-</body>
-</html>
+   
+</asp:Content>
