@@ -29,7 +29,7 @@ namespace E_com
             users.Password = txtpassword.Text;
 
             UsersDAL dal = new UsersDAL();
-            int res = dal.SaveNewUsers(users);
+            int res = dal.SaveNewUser(users);
 
             if (res == 1)
             {
